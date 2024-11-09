@@ -85,5 +85,7 @@ const initialState: DrawerState = {
   exploreMenus: exploreMenus,
 };
 
+// _useDrawerState with setter exposed
+// useDrawerState without setter exposed
 export const { _state: _useDrawerState, state: useDrawerState } =
   createState(initialState);

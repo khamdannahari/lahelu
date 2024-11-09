@@ -1,50 +1,34 @@
-# Welcome to your Expo app 👋
+# Lahelu - React Native Project Showcase
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**GitHub Repository**: [Lahelu on GitHub](https://github.com/khamdannahari/lahelu)  
+**APK Download**: [Download Lahelu APK](https://drive.google.com/drive/folders/1YrV4yGD32WPAO1pATY-b4JIstvtuTEdA?usp=sharing)
 
-## Get started
+This project demonstrates my proficiency in building cross-platform applications using React Native, following best practices for code quality, maintainability, and advanced functionality.
 
-1. Install dependencies
+## Key Features and Technical Highlights
 
-   ```bash
-   npm install
-   ```
+- [x] **Application Built with React Native**
+- [x] **Lahelu Style Design** for consistent branding and UX
+- [x] **Support for React Native Web** for cross-platform compatibility
+- [x] **Top Tab Navigation**
+- [x] **Bottom Tab Navigation**
+- [x] **Drawer Slider Navigation**
+- [x] **Blank Screens for Non-Home Pages** to streamline navigation and scalability
+- [x] **Infinite Scroll** for seamless content loading
+- [x] **Consistent Aspect Ratio for Images and Videos**
+- [x] **Auto-Play Videos** when within the viewport, enhancing user engagement
+- [x] **Video Play/Pause Controls**
+- [x] **Mute/Unmute Video Option**
+- [x] **Video Timeline Slider** for intuitive video control
+- [x] **Pinch Zoom In/Out** for interactive media experience
+- [x] **TypeScript** for type safety and improved code readability
+- [x] **No Hardcoded Values** for better adaptability and flexibility
+- [x] **No Redundancy** in code, ensuring efficiency and maintainability
+- [x] **Separated Style Files** for modularity and organized styling
+- [x] **ESLint** to enforce consistent code quality
+- [x] **Prettier** for code formatting consistency
+- [x] **Useful Comments** for easy readability and future development
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This README provides an overview of my ability to deliver high-quality, structured applications with a focus on performance and user experience.

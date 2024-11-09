@@ -2,27 +2,17 @@ import React from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaView } from "react-native";
 import { MenuIcon, SearchIcon } from "lucide-react-native";
-import { createDrawerNavigator } from "@react-navigation/drawer";
 import { styles } from "./styles/DrawerStyles";
 import { colors } from "@/constants/colors";
 import { Image } from "expo-image";
 import { DrawerContent } from "./childs/DrawerContent";
 import { useDrawerState } from "./useDrawerState";
 import { useDrawerAction } from "./useDrawerAction";
-import Blank from "../blank";
-import { menus } from "@/constants/menus";
-import Main from "../main";
 import { TouchableMain } from "@/components/TouchableMain";
-import { pages } from "@/constants/pages";
+import { pageName } from "@/constants/pages";
+import { Drawer } from "expo-router/drawer";
 
-type DrawerParamList = {
-  main: undefined;
-  blank: undefined;
-};
-
-const DrawerNav = createDrawerNavigator<DrawerParamList>();
-
-export const Drawer = () => {
+export const DrawerMain = () => {
   const activeMenu = useDrawerState((state) => state.activeMenu);
   const exploreMenus = useDrawerState((state) => state.exploreMenus);
 
@@ -32,25 +22,15 @@ export const Drawer = () => {
   return (
     <GestureHandlerRootView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
-        <DrawerNav.Navigator
-          drawerContent={(props) => (
+        <Drawer
+          drawerContent={() => (
             <DrawerContent
               activeMenu={activeMenu}
               exploreMenus={exploreMenus}
-              onPressMenu={(menu) => {
-                const page = menu === menus.home ? pages.main : pages.blank;
-                props.navigation.navigate(page);
-                onPressMenu(menu);
-              }}
-              onPressExplore={(exploreMenuId) => {
-                props.navigation.navigate(pages.blank);
-                onPressExplore(exploreMenuId);
-              }}
+              onPressMenu={onPressMenu}
+              onPressExplore={onPressExplore}
               onPressStar={onPressStar}
-              onPressInfo={() => {
-                props.navigation.navigate(pages.blank);
-                onPressInfo(menus.blank);
-              }}
+              onPressInfo={onPressInfo}
             />
           )}
           screenOptions={({ navigation }) => ({
@@ -78,9 +58,9 @@ export const Drawer = () => {
             ),
           })}
         >
-          <DrawerNav.Screen name={pages.main} component={Main} />
-          <DrawerNav.Screen name={pages.blank} component={Blank} />
-        </DrawerNav.Navigator>
+          <Drawer.Screen name={pageName.main} />
+          <Drawer.Screen name={pageName.blank} />
+        </Drawer>
       </SafeAreaView>
     </GestureHandlerRootView>
   );

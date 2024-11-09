@@ -9,4 +9,5 @@ export const copies = {
   policy: "Kebijakan",
   laheluPlus: "Lahelu+",
   coin: "Koin",
+  tip: "Sawer",
 };

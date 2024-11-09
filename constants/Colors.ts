@@ -1,8 +1,8 @@
 export const colors = {
   black: "#000",
   white: "#fff",
+  blue: "#64a5ed",
   background: "#1a1a1a",
-  activeDrawerItem: "#64a5ed",
   toast: {
     success: {
       background: "#d4edda",
@@ -20,4 +20,12 @@ export const colors = {
       text: "#856404",
     },
   },
+  code333: "#333",
+  code588EC9: "#588EC9",
+  codeDDD: "#DDD",
+  codeE4E4E4: "#E4E4E4",
+  code3C3D37: "#3C3D37",
+  codeB7B7B7: "#B7B7B7",
+  codeDC952B: "#DC952B",
+  code405D72: "#405D72",
 };

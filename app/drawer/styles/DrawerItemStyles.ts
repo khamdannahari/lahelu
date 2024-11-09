@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 28,
   },
   itemContainerActive: {
-    backgroundColor: colors.activeDrawerItem,
+    backgroundColor: colors.blue,
   },
   iconContainer: {
     marginRight: 14,

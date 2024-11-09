@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { View, Animated, LayoutAnimation } from "react-native";
 import { ChevronDown } from "lucide-react-native";
-import { styles } from "./AccordionItemStyles";
 import { colors } from "@/constants/colors";
 import { TouchableMain } from "./TouchableMain";
 import { TextMain } from "./TextMain";
+import { styles } from "./styles/AccordionItemStyles";
 
 interface AccordionItemProps {
   text: string;

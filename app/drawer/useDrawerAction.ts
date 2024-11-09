@@ -1,22 +1,30 @@
 import { useCallback } from "react";
 import { _useDrawerState } from "./useDrawerState";
+import { useRouter } from "expo-router";
+import { menus } from "@/constants/menus";
+import { page } from "@/constants/pages";
 
 export const useDrawerAction = () => {
+  const router = useRouter();
+
   const getState = _useDrawerState((state) => state.getState);
   const setState = _useDrawerState((state) => state.setState);
 
   const onPressMenu = useCallback(
     (activeMenu: string) => {
+      const targetPage = activeMenu === menus.home ? page.main : page.blank;
+      router.navigate(targetPage);
       setState({ activeMenu });
     },
-    [setState],
+    [router, setState],
   );
 
   const onPressExplore = useCallback(
     (exploreMenuId: string) => {
+      router.navigate(page.blank);
       setState({ activeMenu: exploreMenuId });
     },
-    [setState],
+    [router, setState],
   );
 
   const onPressStar = useCallback(
@@ -37,12 +45,10 @@ export const useDrawerAction = () => {
     [getState, setState],
   );
 
-  const onPressInfo = useCallback(
-    (activeMenu: string) => {
-      setState({ activeMenu });
-    },
-    [setState],
-  );
+  const onPressInfo = useCallback(() => {
+    router.navigate(page.blank);
+    setState({ activeMenu: menus.blank });
+  }, [router, setState]);
 
   return { onPressMenu, onPressExplore, onPressStar, onPressInfo };
 };

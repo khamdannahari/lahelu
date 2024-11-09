@@ -41,7 +41,10 @@ export const DrawerContent = ({
   onPressInfo,
 }: DrawerContentProps) => {
   return (
-    <ScrollView style={styles.drawerContainer}>
+    <ScrollView
+      style={styles.drawerContainer}
+      showsVerticalScrollIndicator={false}
+    >
       <DrawerItem
         menu={menus.home}
         activeMenu={activeMenu}

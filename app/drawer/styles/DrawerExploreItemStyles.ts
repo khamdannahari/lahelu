@@ -10,14 +10,14 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 32,
   },
   containerActive: {
-    backgroundColor: colors.activeDrawerItem,
+    backgroundColor: colors.blue,
   },
   image: {
     width: 24,
     height: 24,
     borderRadius: 4,
     borderWidth: 1,
-    borderColor: "#ddd",
+    borderColor: colors.codeDDD,
     marginRight: 10,
   },
   text: {

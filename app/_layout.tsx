@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { fonts } from "@/constants/fonts";
-import { Drawer } from "./drawer/Drawer";
+import { DrawerMain } from "./drawer/DrawerMain";
 
 SplashScreen.preventAutoHideAsync();
 
@@ -22,5 +22,5 @@ export default function RootLayout() {
     return null;
   }
 
-  return <Drawer />;
+  return <DrawerMain />;
 }

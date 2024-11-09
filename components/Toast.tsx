@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Animated, Text, View, StyleProp, ViewStyle } from "react-native";
 import { CheckCircle, AlertCircle, AlertTriangle } from "lucide-react-native";
 import { colors } from "@/constants/colors";
-import { styles } from "./ToastStyles";
+import { styles } from "./styles/ToastStyles";
 
 /* eslint-disable no-unused-vars */
 export enum ToastType {

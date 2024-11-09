@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
   },
   drawerText: {
     fontSize: 18,
-    color: "#333",
+    color: colors.code333,
     fontFamily: fonts.openSans,
   },
   discord: {
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
   sectionTitle: {
     marginTop: 16,
     marginBottom: 4,
-    color: "#588EC9",
+    color: colors.code588EC9,
     fontSize: 18,
     marginHorizontal: 28,
     fontFamily: fonts.openSansBold,
@@ -31,7 +31,7 @@ export const styles = StyleSheet.create({
     marginHorizontal: 28,
   },
   infoText: {
-    color: "#fff",
+    color: colors.white,
     marginRight: 8,
   },
   spacer: {
