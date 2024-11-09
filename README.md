@@ -3,6 +3,9 @@
 **GitHub Repository**: [Lahelu on GitHub](https://github.com/khamdannahari/lahelu)  
 **APK Download**: [Download Lahelu APK](https://drive.google.com/drive/folders/1YrV4yGD32WPAO1pATY-b4JIstvtuTEdA?usp=sharing)
 
+# Preview
+https://github.com/user-attachments/assets/e1f066fa-0033-45bc-a69d-a3a0d9ea5852
+
 This project demonstrates my proficiency in building cross-platform applications using React Native, following best practices for code quality, maintainability, and advanced functionality.
 
 ## Key Features and Technical Highlights
